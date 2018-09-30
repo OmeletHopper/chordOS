@@ -13,9 +13,9 @@ LD	:= gold
 
 ASFLAGS	:= -f elf32
 
-CFLAGS	:= -target $(ARCH)-none-elf -Wall -Wextra
+CFLAGS	:= -target $(ARCH)-none-elf -Wall -Wextra -O2
 CFLAGS	+= -nostdlib -ffreestanding -fno-stack-protector
-CFLAGS	+= -Iinc -D kernel_version=\"$(VERSION)\"
+CFLAGS	+= -Iinc -D kernel_version=\"$(VERSION)\" -g
 
 LFLAGS	:= -n -m elf_$(ARCH) --gc-sections -T arch/$(ARCH)/link.ld
 

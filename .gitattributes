@@ -1,0 +1,14 @@
+* text=auto
+
+*.s text
+*.c text
+*.h text
+
+*.ld text
+
+Makefile text
+*.mk text
+
+*.sh text
+
+*.cfg text

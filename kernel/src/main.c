@@ -14,7 +14,5 @@ void kernel_main() {
   k_puts(8, k_name);
   k_print(7, "...\n\n");
 
-  k_print(5, "Installing GDT... ");
   gdt_load();
-  k_print(2, "[ OKAY ]\n");
 }

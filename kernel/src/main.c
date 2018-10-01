@@ -15,4 +15,5 @@ void kernel_main() {
   k_print(7, "...\n\n");
 
   gdt_load();
+  idt_load();
 }

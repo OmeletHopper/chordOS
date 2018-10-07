@@ -13,12 +13,11 @@ struct idt_entry {
   unsigned char zero;
   unsigned char type_attr;
   unsigned short int high_bits_offset;
-} idt[IDT_SIZE];
+} __attribute__((packed)) idt[IDT_SIZE];
 
 void idt_flush();
 void idt_load();
 void idt_set_gate(int, unsigned long);
-void isr_set_gate(int, unsigned long);
 
 #ifdef __cplusplus
 }

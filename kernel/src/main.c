@@ -1,4 +1,6 @@
 #include <kernel/i386/gdt.h>
+#include <kernel/i386/idt.h>
+#include <kernel/i386/isr.h>
 #include <kernel/splash.h>
 #include <kernel/video.h>
 
@@ -16,4 +18,5 @@ void kernel_main() {
 
   gdt_load();
   idt_load();
+  isr_handlers_install();
 }

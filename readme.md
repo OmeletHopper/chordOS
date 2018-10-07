@@ -1,6 +1,8 @@
 # chordOS [![Build Status](https://travis-ci.org/OmeletHopper/chordOS.svg?branch=master)](https://travis-ci.org/OmeletHopper/chordOS)
 **Copyright (c) 2018 Jonathan Archer.**
 
+<img alt="chordOS Splash" src="/docs/images/splash.png"/>
+
 ## Building
 This section explains how to build chordOS. The packages that are required to build are `make`, `nasm`, `clang`, and `binutils`. Also, `grub-pc-bin` and `xorriso` are needed to make the ISO.
 
